@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Code, ArrowDown } from "lucide-react";
+import { Code, ArrowDown, Database, BarChart3 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const containerVariants = {
@@ -87,7 +87,7 @@ export default function Hero() {
 
 						<motion.div
 							variants={itemVariants}
-							className="flex items-center space-x-4"
+							className="flex items-center space-x-6"
 						>
 							<motion.div
 								animate={{ rotate: 360 }}
@@ -99,6 +99,31 @@ export default function Hero() {
 							>
 								<Code className="text-teal-600" size={24} />
 							</motion.div>
+							<motion.div
+								animate={{ scale: [1, 1.2, 1] }}
+								transition={{
+									duration: 3,
+									repeat: Number.POSITIVE_INFINITY,
+									ease: "easeInOut",
+								}}
+							>
+								<Database className="text-blue-600" size={24} />
+							</motion.div>
+							<motion.div
+								animate={{ y: [0, -5, 0] }}
+								transition={{
+									duration: 2,
+									repeat: Number.POSITIVE_INFINITY,
+									ease: "easeInOut",
+								}}
+							>
+								<BarChart3 className="text-purple-600" size={24} />
+							</motion.div>
+						</motion.div>
+						<motion.div
+							variants={itemVariants}
+							className="flex items-center space-x-4"
+						>
 							<p className="text-gray-600 max-w-md">
 								Merging the art of full-stack development with the science of data —
 								creating smart, scalable, and meaningful digital experiences.

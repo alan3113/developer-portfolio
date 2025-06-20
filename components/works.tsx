@@ -124,7 +124,7 @@ export default function Works() {
 										className="w-full h-48 object-cover"
 									/>
 								</motion.div>
-								<motion.div
+								{/* <motion.div
 									initial={{ opacity: 0 }}
 									whileHover={{ opacity: 1 }}
 									transition={{ duration: 0.3 }}
@@ -146,7 +146,7 @@ export default function Works() {
 									>
 										<Github size={20} />
 									</motion.a>
-								</motion.div>
+								</motion.div> */}
 							</div>
 
 							<div className="p-6">
