@@ -51,8 +51,8 @@ export default function Hero() {
 								Hi there, I'm Alan
 							</motion.p>
 							<motion.h4
-								style={{ fontSize: "70px", fontWeight: 900 }}
-								className="text-6xl md:text-8xl font-black leading-none"
+								style={{ fontWeight: 900 }}
+								className="text-4xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight"
 								initial={{ opacity: 0, y: 50 }}
 								animate={{ opacity: 1, y: 0 }}
 								transition={{ duration: 1, delay: 0.4 }}
@@ -74,6 +74,7 @@ export default function Hero() {
 								>
 									&
 								</motion.span>
+								<br />
 								<motion.span
 									className="gradient-text inline-block"
 									initial={{ opacity: 0, rotateX: -90 }}
@@ -166,7 +167,7 @@ export default function Hero() {
 						transition={{ duration: 1, delay: 0.5 }}
 						className="relative"
 					>
-						<div className="relative w-full max-w-md mx-auto">
+						<div className="relative w-full max-w-sm mx-auto">
 							<motion.div
 								animate={{ rotate: [0, 6, -6, 6, 0] }}
 								transition={{
