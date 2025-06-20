@@ -27,7 +27,7 @@ interface FormErrors {
 const initialState: FormFields = { name: "", email: "", message: "" };
 
 const CONTACT_EMAIL =
-	process.env.NEXT_PUBLIC_CONTACT_EMAIL || "albert@example.com";
+	process.env.NEXT_PUBLIC_CONTACT_EMAIL || "alankjose18@gmail.com";
 const FORMSPREE_ENDPOINT =
 	process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT ||
 	"https://formspree.io/f/xanjbzda";
